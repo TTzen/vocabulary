@@ -54,9 +54,9 @@ void vocabulary::work()
             cin >> flg;
             if (flg == 'Y' || flg == 'y')
             {
-                m_vocabularys.erase(m_vocabularys.begin() + pos);
                 num_vocabulary --;
                 cout << m_vocabularys[pos].Chinese << endl;
+                m_vocabularys.erase(m_vocabularys.begin() + pos);
                 cout << "(^ v ^)" << endl;
                 break;
             }else if (flg == 'N' || flg == 'n')
